@@ -86,14 +86,27 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/app/Comentario.js":
+/*!*******************************!*\
+  !*** ./src/app/Comentario.js ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nclass Comentario{\r\n    \r\n  obtenerComentarios(){\r\n      fetch('https://eonet.sci.gsfc.nasa.gov/api/v3/categories')\r\n      .then(function(respuesta){\r\n          respuesta.json()\r\n          .then(function(data){\r\n              console.log(data);\r\n          })\r\n      });\r\n  }\r\n}\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (Comentario);//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvYXBwL0NvbWVudGFyaW8uanMuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvYXBwL0NvbWVudGFyaW8uanM/OTZhZiJdLCJzb3VyY2VzQ29udGVudCI6WyJjbGFzcyBDb21lbnRhcmlve1xyXG4gICAgXHJcbiAgb2J0ZW5lckNvbWVudGFyaW9zKCl7XHJcbiAgICAgIGZldGNoKCdodHRwczovL2VvbmV0LnNjaS5nc2ZjLm5hc2EuZ292L2FwaS92My9jYXRlZ29yaWVzJylcclxuICAgICAgLnRoZW4oZnVuY3Rpb24ocmVzcHVlc3RhKXtcclxuICAgICAgICAgIHJlc3B1ZXN0YS5qc29uKClcclxuICAgICAgICAgIC50aGVuKGZ1bmN0aW9uKGRhdGEpe1xyXG4gICAgICAgICAgICAgIGNvbnNvbGUubG9nKGRhdGEpO1xyXG4gICAgICAgICAgfSlcclxuICAgICAgfSk7XHJcbiAgfVxyXG59XHJcbmV4cG9ydCBkZWZhdWx0IENvbWVudGFyaW87Il0sIm1hcHBpbmdzIjoiQUFBQTtBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/app/Comentario.js\n");
+
+/***/ }),
+
 /***/ "./src/app/index.js":
 /*!**************************!*\
   !*** ./src/app/index.js ***!
   \**************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("console.log(\"hola mundo desde webpack!!!\")//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvYXBwL2luZGV4LmpzLmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vc3JjL2FwcC9pbmRleC5qcz9mYjA1Il0sInNvdXJjZXNDb250ZW50IjpbImNvbnNvbGUubG9nKFwiaG9sYSBtdW5kbyBkZXNkZSB3ZWJwYWNrISEhXCIpIl0sIm1hcHBpbmdzIjoiQUFBQSIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/app/index.js\n");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Comentario__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Comentario */ \"./src/app/Comentario.js\");\n\r\n\r\nconst com = new _Comentario__WEBPACK_IMPORTED_MODULE_0__[\"default\"]();\r\nconsole.log(com.obtenerComentarios());\r\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvYXBwL2luZGV4LmpzLmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vc3JjL2FwcC9pbmRleC5qcz9mYjA1Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBDb21lbnRhcmlvIGZyb20gJy4vQ29tZW50YXJpbyc7XHJcblxyXG5jb25zdCBjb20gPSBuZXcgQ29tZW50YXJpbygpO1xyXG5jb25zb2xlLmxvZyhjb20ub2J0ZW5lckNvbWVudGFyaW9zKCkpO1xyXG4iXSwibWFwcGluZ3MiOiJBQUFBO0FBQUE7QUFBQTtBQUNBO0FBQ0E7QUFDQTsiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/app/index.js\n");
 
 /***/ })
 
