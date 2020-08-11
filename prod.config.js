@@ -6,22 +6,11 @@ module.exports = {
     filename: "app.bundle.js",
     path: path.resolve(__dirname, "build"),
   },
-  devServer: {
-    port: 2020,
-  },
-  module: {
-    rules: [
-      {
-        test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
-      },
-    ],
-  },
-plugins: [
+  plugins: [
     new HTMLWebpackPlugin({
       template: "./src/index.html",
       minify: {
-        collapseWhitespace: false,
+        collapseWhitespace: true,
         removeComments: true,
         removeRedundantAttributes: true,
         removeScriptTypeAttributes: true,
