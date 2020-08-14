@@ -1,12 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto de ciclistas de webpack y babel</title>
+    <title>Proyecto de ciclistas con webpack y babel</title>
 </head>
+
 <body>
-    <h1>Ciclistas</h1>
-    <p>Cambio de html</p>
+    <section class="container-fluid">
+        <header>
+            <section class="row">
+                <article class="col-1 text-center">
+                    <img class="img-fluid" id="logo" alt="Logo Conjunto Residencial"
+                        src='./app/imagenes/bicicleta-logo.png' />
+                </article>
+                <article class="col-7">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Ciclismo</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contactanos</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </article>
+                <article class="col-4">
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Buscar contenido"
+                            aria-label="Search">
+                        <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Buscar</button>
+                    </form>
+                </article>
+            </section>
+            <section class="row" id="ctn_banner">
+                <article class="col-lg-12">
+                    <img class="img-fluid card-img" src="./app/imagenes/baner-ciclista.jpg" />
+                    <div class="card-title text-primary">Just Enjoy</div>
+                    <div class="card-title-1 text-primary">The Ride</div>
+                </article>
+            </section>
+        </header>
+
+        <section id="main">
+            <section class="card-header">
+                <ul class="nav nav-tabs card-header-tabs">
+                    <li class="nav-item bg-nav">
+                        <a class="nav-link" data-toggle="tab" href="#registro-tiempos"
+                            id="registro-tiempos-tab">Registro de tiempos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#promedios" id="promedios-tab">Promedios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#mejores-tiempos"
+                            id="mejores-tiempos-tab">Mejores Tiempos</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="card-body">
+                <section class="tab-content" id="mis-tabs">
+                    <article class="tab-pane fade show active" id="registro-tiempos" role="tabpanel"
+                        aria-labelledby="registro-tiempos-tab">
+                        <div class="row">
+                            <!-- Input Buscar -->
+                            <div class="col-10">
+                                <form class="form">
+                                    <input class="form-control" type="search" placeholder="Filtrar" aria-label="Search">
+                                </form>
+                            </div>
+                            <div class="col-2">
+                                <button class="btn btn-info" type="button" id="btn-filtrar"><i
+                                        class="fas fa-search-plus"></i></button>
+                                <button data-toggle="modal" data-target="#modal-registro" class="btn btn-info"
+                                    type="button" id="btn-adicionar"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered" id="tbl-corredores">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">Corredor</th>
+                                                <th scope="col">Carrera 1</th>
+                                                <th scope="col">Carrera 2</th>
+                                                <th scope="col">Carrera 3</th>
+                                                <th scope="col">Carrera 4</th>
+                                                <th scope="col">Carrera 5</th>
+                                                <th scope="col">Acciones</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="tab-pane fade" id="promedios" role="tabpanel" aria-labelledby="promedios-tab">
+
+                    </article>
+
+                    <article class="tab-pane fade" id="mejores-tiempos" role="tabpanel"
+                        aria-labelledby="mejores-tiempos-tab">
+                        <div class="card text-left bg-warning text-white">
+                            <div class="card-header">
+                                Oro
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-5">
+                                        <p>Corredor: <span class="nombre_deportista">carlos perez</span></p>
+                                        <p>Tiempo: 20min</p>
+                                    </div>
+                                    <div class="col-4 text-center">
+                                        <p class="total_ganancia_deportista">$27.500.000</p>
+                                    </div>
+
+                                    <div class="col-3 text-center">
+                                        <img class="img-fluid medalla_deportista" src="./app/imagenes/medalla-oro.png" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+            </section>
+        </section>
+        <!-- <div class="table-responsive">
+            <table id="nasa_categories" class="table table-bordered">
+                <thead>
+                    <tr>
+                        <td>ID</td>
+                        <td>Titulo</td>
+                        <td>Descripción</td>
+                        <td>Capa</td>
+                        <td>Link</td>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/cpgTIcxt9Hs" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+    </section>
+
+    <div class="modal fade" id="modal-registro" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Registro de competidor</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="frm-registro-ciclista">
+                        <div class="card text-left bg-primary text-white">
+                            <div class="card-header">
+                                Datos del corredor
+                            </div>
+                            <div class="card-body">
+                                <article class="row">
+                                    <article class="col-6">
+                                      <div class="form-group">
+                                        <label for="nombre-corredor">Nombre (*)</label>
+                                        <input type="text" class="form-control" id="nombre-corredor"
+                                          placeholder="Nombre del corredor" required />
+                                      </div>
+                                    </article>
+                                </article>
+                            </div>
+                        </div>
+                        
+                        <div class="card text-left bg-ligth mt-3">
+                            <div class="card-header">
+                                Registro de tiempos
+                            </div>
+                            <div class="card-body">
+                                <article class="row">
+                                    <article class="col-6">
+                                      <div class="form-group">
+                                        <label for="tiempo1">Carrera 1 (en minutos) *</label>
+                                        <input type="number" class="form-control" id="tiempo1"
+                                          placeholder="Tiempo de la carrera 1" required />
+                                      </div>
+                                    </article>
+                                    <article class="col-6">
+                                        <div class="form-group">
+                                          <label for="tiempo2">Carrera 2 (en minutos) *</label>
+                                          <input type="number" class="form-control" id="tiempo2"
+                                            placeholder="Tiempo de la carrera 2" required />
+                                        </div>
+                                      </article>
+                                </article>
+                                <article class="row">
+                                    <article class="col-6">
+                                        <div class="form-group">
+                                            <label for="tiempo3">Carrera 3 (en minutos) *</label>
+                                            <input type="number" class="form-control" id="tiempo3"
+                                              placeholder="Tiempo de la carrera 3" required />
+                                          </div>
+                                    </article>
+                                    <article class="col-6">
+                                        <div class="form-group">
+                                            <label for="tiempo4">Carrera 4 (en minutos) *</label>
+                                            <input type="number" class="form-control" id="tiempo4"
+                                              placeholder="Tiempo de la carrera 4" required />
+                                          </div>
+                                    </article>
+                                </article>
+                                <article class="row">
+                                    <article class="col-6">
+                                        <div class="form-group">
+                                            <label for="tiempo5">Carrera 5 (en minutos) *</label>
+                                            <input type="number" class="form-control" id="tiempo5"
+                                              placeholder="Tiempo de la carrera 5" required />
+                                          </div>
+                                    </article>
+                                </article>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Salir</button>
+                    <button type="button" class="btn btn-primary" id="btn-guardar-registro-ciclista">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 </body>
+
 </html>
